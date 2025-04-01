@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO List</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #FFD1DC; 
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .task-container {
+            flex: 1;
+        }
+        .task {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .completed {
+            text-decoration: line-through;
+        }
+        .done {
+            color: green;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .dog-image {
+            max-width: 200px; 
+            height: auto;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TO DO List</h1>
+    <div class="container">
+        <div class="task-container">
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button id="addTaskButton">Add Task</button>
+            <ul id="taskList"></ul>
+        </div>
+        <img src="https://pngimg.com/uploads/labrador_retriever/labrador_retriever_PNG41.png" alt="Cute Labrador" class="dog-image">
+    </div>
+
+    <script src="app.mjs" type="module"></script>
+</body>
+</html>
