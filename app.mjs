@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTasks();
     };
 
-    // Event listener for adding a task
+    // Working function
     addTaskButton.addEventListener('click', addTask);
 
     renderTasks();
